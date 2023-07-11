@@ -13,6 +13,7 @@
 
         body {
             font: 16px/28px 'Microsoft Yahei';
+            /* background-color: #f5f5f5; */
         }
 
         a {
@@ -29,6 +30,8 @@
         }
 
         .header-box {
+            position: sticky;
+            top: 0;
             /* width: 1300px; */
             height: 115px;
             /* position: relative; */
@@ -92,6 +95,88 @@
             background-image: url(images/mountain.png);
             background-repeat: no-repeat;
             background-position: center center;
+            text-align: center;
+        }
+
+        .pic h1 {
+            color: white;
+            font-size: 40px;
+            padding-top: 100px;
+            line-height: 50px;
+        }
+
+        .smry {
+            height: 500px;
+            /* background-color: gray; */
+            margin-top: 40px;
+            margin-bottom: 80px;
+
+        }
+
+        .smry h2 {
+            color: #0069b1;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif !important;
+            line-height: 50px;
+            margin-bottom: 35px;
+        }
+
+        .smry p {
+            color: black;
+            font-size: 16px;
+            line-height: 40px;
+            text-align: justify;
+        }
+
+        .banner-box {
+            height: 500px;
+            background-color: gray;
+            background-image: url(images/WHOI_textures_3.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            margin-top: 80px;
+            overflow: hidden;
+        }
+
+        .banner {
+            height: 400px;
+            /* background-color: pink; */
+            margin-top: 50px;
+        }
+
+        .banner-box .banner>div {
+            float: left;
+            width: 291px;
+            height: 400px;
+            background-color: #fff;
+            margin-right: 12px;
+            text-align: center;
+        }
+
+        .banner-box .banner .p4 {
+            margin-right: 0;
+        }
+
+        .banner-box .banner img {
+            width: 100%;
+        }
+
+        .footer-box {
+            height: 115px;
+            background-color: #041e42;
+            overflow: hidden;
+        }
+
+        .footer {
+            height: 15px;
+            margin-top: 40px;
+        }
+
+        .footer-box .footer p {
+            font-size: 12px;
+            text-align: center;
+            color: #b8bcc2;
         }
     </style>
 </head>
@@ -115,6 +200,60 @@
     </div>
 
     <div class="pic">
+        <h1>Nitrogen Isotope Systematics of Oceanic Mantle</h1>
+    </div>
+
+
+    <div class="smry w">
+        <h2>Project Summary:</h2>
+        <p> The large concentration contrast between nitrogen (N) in Earth's atmosphere (78%) and mantle-derived
+            materials (ppm-level) makes it a sensitive tracer for interactions between Earth's interior and exterior
+            reservoirs. This has led to numerous studies exploiting nitrogen isotopes (δ<sup>15</sup>N) in
+            mantle-derived fluids
+            and rocks to address issues such as the origin of volatiles in the terrestrial mantle, reservior development
+            and mantle mixing over Earth history, ingassing and outgassing fluxes between terrestrial reservoirs, the
+            degassing history of Earth and the formation of Earth's atmosphere. The foundation of many of these studies
+            is based on the interpretation of high-quality δ<sup>15</sup>N data from mantle-derived materials (i.e.,
+            oceanic
+            basalts and mantle xenoliths), many of which contain extremely small amounts of N. However, the published
+            oceanic basalt δ<sup>15</sup>N database remains surprising small, particularly for major tessestrial
+            reservoirs such as
+            the oceanic mantle. Recently, the Barry Lab has developed the analytical capability of making low-level
+            δ<sup>15</sup>N
+            measurements using a dedicated purification and extraction system, which is interfaced to a Nu Noblesse mass
+            spectrometer at Woods Hole Oceanographic Institution. This system is uniquely designed for simultaneous
+            multi-collection, which enables measurement of N-isotopes in exceedingly small samples. Key mantle-derived
+            samples have been selected and analyzed at the Barry lab. These samples are derived from ocean islands,
+            spreading ridge axes, and backarc basins - encompassinhg submarine basalts, mantle xenoliths and mafic
+            crystals. </p>
+    </div>
+
+    <div class="banner-box">
+        <div class="banner w">
+            <div class="p1">
+                <img src="images/1.png" alt="">
+                <h3>Peter Barry</h3>
+            </div>
+            <div class="p2">
+                <img src="images/2.png" alt="">
+                <h3>Peter Barry</h3>
+            </div>
+            <div class="p3">
+                <img src="images/3.png" alt="">
+                <h3>Peter Barry</h3>
+            </div>
+            <div class="p4">
+                <img src="images/4.jpg" alt="">
+                <h3>Kan Li</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-box">
+        <div class="footer w">
+            <p>This website shows the N isotope data obtained so far produced from the NSF-funded project - 'Towards
+                Characterizing the Nitrogen Isotopes Systematics of the Oceanic Mantle'. </p>
+        </div>
 
     </div>
 
