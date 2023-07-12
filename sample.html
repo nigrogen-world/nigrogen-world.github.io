@@ -5,68 +5,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sample map</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+        .header-box {
+            position: static;
         }
 
-        body {
-            font: 16px/28px 'Microsoft Yahei';
-        }
-
-        a {
-            text-decoration: none;
+        p {
+            width: 1228px;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 30px;
             font-weight: 700;
-            color: aliceblue;
-        }
-
-        a:hover {
-            color: beige;
-            text-decoration: underline;
-        }
-
-        li {
-            list-style: none;
         }
 
         .box {
             position: relative;
             width: 1228px;
             height: 777px;
-            margin: 100px auto;
-            background-image: url(images/map.jpg);
+            margin: 30px auto;
+            background-image: url(images/map0.jpg);
             background-repeat: no-repeat;
             background-position: center top;
+            background-size: contain;
         }
 
-        .no1 {
-            position: absolute;
-            top: 595px;
-            left: 100px;
-            width: 10px;
-            height: 10px;
-            background-color: black;
-            border-radius: 5px;
+        .box a {
+            font-weight: 700;
+            color: black;
+            line-height: 14px;
         }
 
-        .no1l {
+        .box a:hover {
+            color: #fff
+        }
+
+        .city {
             position: absolute;
-            top: 605px;
-            left: 105px;
-            width: 10px;
-            height: 10px;
+            top: 248px;
+            left: 327px;
+            color: #fff;
+            /* color: pink; */
+        }
+
+        .no2 {
+            top: 300px;
+            left: 950px;
+        }
+
+        .dotted {
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .city div[class^="pulse"] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 12px #fff;
+            border-radius: 50%;
+            animation: pulse 1.8s linear infinite;
+        }
+
+        .city div.pulse2 {
+            animation-delay: 0.4s;
+        }
+
+        .city div.pulse3 {
+            animation-delay: 0.8s;
+        }
+
+        .city-link {
+            position: absolute;
+            top: 250px;
+            left: 345px;
+            /* width: 10px;
+            height: 10px; */
             background-color: transparent;
+        }
+
+        .no2l {
+            top: 302px;
+            left: 970px;
+        }
+
+        @keyframes pulse {
+            0% {}
+
+            70% {
+                width: 40px;
+                height: 40px;
+                opacity: 1;
+            }
+
+            100% {
+                width: 70px;
+                height: 70px;
+                opacity: 0;
+            }
         }
     </style>
 </head>
 
 <body>
-    <h1>Nitrogen Isotope Systematics of Oceanic Mantle</h1>
+    <div class="header-box">
+        <div class="header w">
+            <a href="index.html">
+                <div class="logo"> </div>
+            </a>
+            <div class="header-nav">
+                <ul>
+                    <li><a href="sample.html" target="_blank">Sample</a></li>
+                    <li><a href="#" target="_blank">Instrumentation</a></li>
+                    <li><a href="#" target="_blank">Database</a></li>
+                    <li><a href="#" target="_blank">Publications</a></li>
+                    <li><a href="#" target="_blank">Photos and Videos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <p>So far, we have analyzed 94 mafic samples from different settings and the sample locations are shown in the
+        following diagram:</p>
     <div class="box">
-        <div class="no1"></div>
+        <div class="city">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
         <a href="https://www.sciencedirect.com/science/article/pii/S0012821X20306518?via%3Dihub" target="_blank"
-            class="no1l">666</a>
+            class="city-link">Siberia <br>Xenoliths</a>
+
+        <div class="city no2">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <a href="https://www.sciencedirect.com/science/article/pii/S0012821X20306518?via%3Dihub" target="_blank"
+            class="city-link no2l">Mid-Atlantic</a>
 
     </div>
 </body>
