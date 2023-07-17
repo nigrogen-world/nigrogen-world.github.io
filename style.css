@@ -93,6 +93,7 @@ li {
 .pic h1 {
     color: white;
     font-size: 40px;
+    /* font-family: serif, Georgia, 'Times New Roman', Times; */
     padding-top: 100px;
     line-height: 50px;
 }
